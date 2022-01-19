@@ -8,7 +8,3 @@ age=CurrentYear - birthyear
 (CurrentYear - birthyear + 1).times do |i|
   puts " en #{birthyear + i } tu aura #{i} ans" 
 end
-
-(birthyear).upto(CurrentYear).each do |i|
-    puts "#{i} #{i - birthyear} "
-end

@@ -1,3 +1,3 @@
-puts "quel âge avez-vous"
+puts "quel annéee vous êtes né"
 age=gets.to_i
-puts "#{1993 + 100}"
+puts "#{age + 100}"
