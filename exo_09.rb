@@ -6,7 +6,3 @@ CurrentYear=Date.today.year
 (CurrentYear - birthyear + 1).times do |i|
     puts "#{birthyear + i }!"
 end
-
-(birthyear).upto(CurrentYear).each do |i|
-    puts "#{i}"
-end
