@@ -16,5 +16,4 @@ floor.times do |i|
 
 #j'ajoute mes # avec +1 pour qu'il n'y ait pas de décalage
     puts "#"*(i+1)
-
 end

@@ -20,5 +20,4 @@ floor.times do |i|
 
 #sur les étages je demande d'afficher un blanc qui correspond à mon nombre d'étages global - l'étage, j'ajoute (-1) pour qu'il n'y ait pas de décalage, j'ajoute mes # avec +1 pour qu'il n'y ait pas de décalage
     puts (space*(floor-i-1)) + ("#"*(i+1))
-
 end

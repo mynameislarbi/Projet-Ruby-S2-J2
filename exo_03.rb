@@ -1,3 +1,3 @@
-puts "Quel année êtes-vous né ?"
+puts "Quelle année êtes-vous né ?"
 age = gets.to_i
 puts "#{2017 - age}"

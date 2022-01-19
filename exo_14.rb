@@ -8,7 +8,6 @@ email = []
 #filtrer les nombres pairs
 if i.even?
  email.push "jean.dupont.%02i@gmail.fr" % [i]
-
 end
 end
 

@@ -7,7 +7,6 @@ while floor<1 || floor>25
     puts "On a dit entre 1 et 25"
     print ">"
     floor = gets.chomp.to_i
-
 end
 
 puts "Voici la pyramide : "
@@ -22,5 +21,4 @@ floor.times do |i|
 #sur les étages je demande d'afficher un blanc qui correspond à mon nombre d'étages global - l'étage, j'ajoute (-1) pour qu'il n'y ait pas de décalage, j'ajoute mes # avec +1 pour qu'il n'y ait pas de décalage
 print (space * (floor - i+1))  
 puts "#" + "#" * (i+i)
-
 end
