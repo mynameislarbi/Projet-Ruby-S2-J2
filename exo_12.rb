@@ -1,21 +1,14 @@
-require 'date'
+puts "Quel âge as-tu ?"
+age = gets.chomp.to_i
+year_birth = 2022 - age
 
-puts "Entre ton année de naissance"
-print ">"
-var = gets.chomp.to_i
-ajd = Date.today.year
-time = ajd - var
+#je souhaite afficher les dates de la date de naissance à 2022
+year_birth.upto(2022) do |i|
 
-(var).upto(ajd).each do |i|
-    if ((ajd - i) == i - var)
-        puts "Il y a #{ajd - i} ans, tu avais la moitié de l'âge que tu as aujourd'hui"
-    else
-        puts "Il y a #{ajd - i} an tu avais #{i - var} ans"
-    end
-end
+#je propose 2 options de réponses en fonction de Y=X ou pas
+    if (2022-i) != (i-year_birth)
+        puts "Il y a #{2022-i} an(s) tu avais #{i- year_birth} ans."
+    else 
+        puts "Il y a #{2022-i} ans, tu avais la moitié de l'âge que tu as aujourd'hui."
 
-print "\n"
-
-(time + 1).times do |i|
-    puts "Il y a #{2022 - (var + i)} an tu avais #{i} ans"
 end

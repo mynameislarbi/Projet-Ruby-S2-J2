@@ -1,20 +1,9 @@
-require "date"
-
-puts "donne moi une date"
-birthyear=gets.chomp.to_i
-CurrentYear=Date.today.year
-age=CurrentYear - birthyear
-
-(CurrentYear - birthyear + 1).times do |i|
-  puts " en #{birthyear + i } tu aura #{i} ans" 
-end
-
-puts "quel est ton âge"
-print ">"
+puts "Quel âge as-tu ?"
 age = gets.chomp.to_i
-compteur = 0
+year_birth = 2022 - age
 
-while compteur <= age
- puts "il y a #{age - compteur} ans, tu avais #{compteur} ans"
-compteur = compteur + 1
+#je souhaite afficher les dates de la date de naissance à 2022
+year_birth.upto(2022) do |i|
+    puts "Il y a #{2022-i} an(s) tu avais #{i- year_birth} ans."
+
 end

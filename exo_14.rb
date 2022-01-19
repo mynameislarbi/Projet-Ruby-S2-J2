@@ -1,16 +1,16 @@
-array = Array.new(50)   #{"jean.dupont." + "#{|i|}" + "@email.fr"}
-50.times do |i|
-    if i < 10
-        array[i] = "jean.dupont.0" + ((i + 1).to_s) + "@email.fr"
-    else
-        array[i] = "jean.dupont." + ((i + 1).to_s) + "@email.fr"
-    end
+#déclarer l'array à remplir
+
+email = []
+
+#générer les adresses mails
+(1..50).each do |i|
+
+#filtrer les nombres pairs
+if i.even?
+ email.push "jean.dupont.%02i@gmail.fr" % [i]
+
+end
 end
 
-var = 0;
-
-(var).upto(50).each do |i|
-    if (i + 1) % 2 == 0
-        puts array[i]
-    end
-end
+#afficher array
+puts email
